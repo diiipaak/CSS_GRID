@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    p{
+      margin: 0;
+      padding: 0;
+    }
+  
+    .container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 25px;
+      margin: 10px;
+      flex-direction: column;
+    }
+    .detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 748px;
+    height: 200px;
+    }
+ 
+    .main_container{
+      background-color: #000;
+      width: 748px;
+      height: 748px;
+      display: grid;
+      grid-gap:9px;
+      grid-template-columns:320px 198px 153px 50px ;
+      grid-template-rows: 414px 285px 20px ;
+    }
+    .box{
+      background-color: #F0F1EC;
+    }
+    .red {
+      background-color:  #E72F24;
+    }
+    .white_1{
+      grid-column: span 3;
+    }
+    .white_3{
+      grid-column: span 2;
+    }
+    .blue{
+      display: grid;
+      grid-gap:10px;
+      grid-template-rows: 130px auto;
+      background-color: #004592;
+      height: 325px;
+      width: 50px;
+      background-color: #000;
+    }
+    .yellow{
+      background-color: #F9D01E;
+      height: 31px;
+    }
+    .black{
+      height: 31px;
+    }
+    .white_4{
+      height: 31px;
+    }
+    .blue1{
+      background-color: #004592;
+      
+    }
+   
+  </style>
+</head>
+
+<body>
+  <!--  HTML here -->
+   <div class="container">
+        <div class="detail">
+             <p class="painter_name"><h2>Piet Mondrian (1872-1944)</h2></p>
+             <p class="article_name"><h5>Composition No. III, with Red, Blue, Yellow, and Black, 1929</h5></p>
+             <p class="real_link"><h6>to look real image <a href="https://www.christies.com/en/lot/lot-5893250#:~:text=Painted%20in%201929%2C%20Composition%20No,the%20entire%20previous%20decade's%20efforts. " target="_blank"> click here</a></h6></p>
+        </div>
+        <div class="main_container">
+             <div class="red box"></div>
+             <div class="white_1 box"></div>
+             <div class="white_2 box"></div>
+             <div class="white_3 box"></div>
+             <div class="blue box">
+                  <div class="blue1 box"></div>
+                  <div class="white01 box"></div>
+           </div>
+      <div class="white_4 box" ></div>
+      <div class="yellow box"></div>
+      <div class="black"></div> 
+    </div>
+   </div>
+</body>
+
+</html>
