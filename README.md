@@ -26,7 +26,7 @@ Installation
 Clone the repository or download the project files.
 bash
 Copy code
-git clone https://github.com/yourusername/mondrian-composition.git
+git clone [https://github.com/yourusername/mondrian-composition.git](https://github.com/diiipaak/CSS_GRID.git)
 Open index.html in your preferred web browser.
 Usage
 View the project in your browser to explore the HTML/CSS rendering of Mondrian's artwork.
